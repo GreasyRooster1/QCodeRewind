@@ -1,0 +1,38 @@
+:root{
+    --pane-background: #9a9a9a;
+
+    --gutter-accent: #b9b9b9;
+    --gutter-main: #8c8c8c;
+    --gutter-dark: #777777;
+}
+
+body{
+    margin: 0;
+}
+
+.pane-container{
+    margin:0;
+}
+
+.gutter{
+    background: var(--gutter-main);
+}
+
+.gutter-handle{
+    background: var(--gutter-main);
+}
+
+.editor-pane{
+    background: var(--pane-background);
+    width:33vw;
+}
+
+edit-handle .edit-handle-block{
+    height:25vh;
+    width:100%;
+    background: var(--gutter-accent);
+    position: absolute;
+    top: 50%;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}

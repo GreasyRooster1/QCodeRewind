@@ -1,0 +1,19 @@
+.right-bar{
+    display: flex;
+    flex-direction: column;
+}
+
+.badges{
+    height:40vh;
+    background: var(--right-sections-background);
+}
+
+.points{
+    height:20vh;
+    background: var(--right-sections-background);
+}
+
+.user{
+    height:20vh;
+    background: var(--right-sections-background);
+}

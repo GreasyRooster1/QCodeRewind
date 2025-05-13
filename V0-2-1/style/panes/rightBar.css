@@ -1,0 +1,138 @@
+.right-bar{
+    display: flex;
+    flex-direction: column;
+}
+
+.badges{
+    height:60vh;
+    background: var(--right-sections-background);
+    display: flex;
+    flex-direction: column;
+}
+
+.badge-details{
+    height:30%;
+    background:var(--badge-details-background);
+    margin-top: auto;
+    overflow: clip;
+}
+
+.badge-title{
+    margin: 10px 7px 7px;
+    font-size:30px;
+    text-align: center;
+}
+
+.badge-info-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:5px
+}
+
+.badge-name{
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.badge-info-image{
+    width: 30%;
+    height:30%;
+    margin:5px;
+    border-radius: 8px;
+}
+
+.badge-info-desc{
+    margin:5px;
+    width: 50%;
+}
+
+.badge-rarity{
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.badge-rarity.common{
+    color:var(--common-rarity-color);
+}
+.badge-rarity.uncommon{
+    color:var(--uncommon-rarity-color-dark);
+    -webkit-text-stroke: 1px var(--uncommon-rarity-color);
+}
+.badge-rarity.rare{
+    color:var(--rare-rarity-color-dark);
+    -webkit-text-stroke: 1px var(--rare-rarity-color);
+    text-shadow: 0 0 4px var(--rare-rarity-color);
+    letter-spacing: 1px;
+}
+.badge-rarity.legendary{
+    color:var(--legendary-rarity-color);
+    -webkit-text-stroke: 1px var(--legendary-rarity-color-dark);
+    text-shadow: 0 0 4px var(--legendary-rarity-color-faded);
+    letter-spacing: 2px;
+    filter: glow();
+}
+.badge-rarity.mythic{
+    color:var(--mythic-rarity-color);
+}
+
+
+
+.points{
+    height:20vh;
+    background: var(--right-sections-background);
+}
+
+
+
+.user{
+    height:20vh;
+    background: var(--right-sections-background);
+    display: flex;
+    flex-direction: column;
+}
+
+.username-title{
+    font-size: 1.6em;
+    text-align: center;
+}
+
+.user-main-content{
+    flex:1;
+}
+
+.user-profile-icon{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-profile-img{
+    height: 90%;
+    aspect-ratio: 1/1;
+    border-radius: 5px;
+}
+
+.user-points-bar-container{
+    height:10%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-points-progress-bar{
+    width:90%;
+    appearance: none;
+    border-radius: 100px;
+    overflow: clip;
+}
+
+.user-points-progress-bar::-webkit-progress-value {
+    background-color: var(--points-progress-bar-fill);
+}
+
+.user-points-progress-bar::-webkit-progress-bar {
+    background-color: var(--points-progress-bar-background);
+}

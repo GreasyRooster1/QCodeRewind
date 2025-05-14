@@ -64,6 +64,10 @@ function createBadgeElementFromSnap(snap){
 }
 
 function createProjectElement(projectId,projectData){
+    let newLessons = ["fireworks","tic-tac-toe","target-practice","solar-system","game-of-life"];
+    if( newLessons.includes(projectId)){
+        return;
+    }
     let el = document.createElement("project-link");
     el.setAttribute("href","editor/editor.html?projectId="+projectId);
     el.setAttribute("name",projectData.name);

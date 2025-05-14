@@ -14,6 +14,10 @@ function loadLessons(){
 }
 
 function createLessonElement(lessonId,lessonData){
+    let newLessons = ["fireworks","tic-tac-toe","target-practice","solar-system","game-of-life","snake-old"];
+    if( newLessons.includes(lessonId)){
+        return;
+    }
     let linkWrapper = document.createElement("div");
     let link = document.createElement("span");
 

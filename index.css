@@ -1,0 +1,63 @@
+:root{
+    --background: #aeaeae;
+    --main-content: #d1d1d1;
+}
+
+*{
+    font-family: "JetBrains Mono", monospace;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    background: var(--background);
+}
+.main-content{
+    width:60vw;
+    min-height:100vh;
+    background:var(--main-content);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom:100px
+}
+
+.title{
+    font-size:4rem;
+    text-align: center;
+}
+
+.version-box{
+    color:#000;
+    text-decoration: none;
+    margin-top:4vh;
+    display:flex;
+    width:50vw;
+    flex-direction: column;
+    padding:10px;
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.version-title{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.screenshot img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.description{
+display: flex;
+    flex-direction: column;
+}
+.date{
+    font-size: 1.2rem;
+}
+.commits{
+    font-size: 1.2rem;
+}
